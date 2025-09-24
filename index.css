@@ -1,0 +1,66 @@
+.main {
+    margin: 10% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 50em;
+    background: linear-gradient(270deg, #ce68d9, #45c6db, #45db79);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
+    transition: .4s ease-in-out;
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The Main Switch */
+.card_content {
+    text-align: center;
+    font-family: monospace;
+    padding: 50px 40px;
+}
+
+.card_content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.card_content h2 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+#result-msg {
+    font-size: 1.5rem;
+    margin-top: 40px;
+    font-family: monospace;
+    color: rgb(0, 0, 0);
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+#checker-btn:active {
+    box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
+    transform: translate(0.1em, 0.1em);
+}
